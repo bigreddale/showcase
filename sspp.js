@@ -1,5 +1,5 @@
 define( [ "jquery", "mcomjs/components/media/CarouselController" ], function ( $, CarouselController ) {
-alert(1);
+alert(2);
   var selfSelect = {};
 
     selfSelect.pools = {
