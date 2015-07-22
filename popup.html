@@ -1,0 +1,22 @@
+<html>
+<head>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+	type="text/javascript"></script>
+	<script>
+  $(document).ready(function(){
+    $('button').on('click', function(){
+      document.cookie='herokukey='+encodeURIComponent('%7B%22EXPERIMENT%22%3A%5B'+$(this).attr('rel')+'%5D%7D')+'; path=/;';alert('set')
+    });
+  });
+
+</script>
+</head>
+<body>
+<button rel="1006">Region 1</button>
+<button rel="1008">Region 2</button>
+<button rel="1010">Region 3</button>
+<button rel="1012">Region 4</button>
+<button rel="1014">Region 5</button>
+</body>
+</html>
