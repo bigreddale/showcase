@@ -1,5 +1,5 @@
 define( [ "jquery", "mcomjs/components/media/CarouselController" ], function ( $, CarouselController ) {
-alert(3);
+alert(4);
   var selfSelect = {};
 
     selfSelect.pools = {
@@ -108,7 +108,7 @@ alert(3);
             } ),
             dataType: 'html',
             success: function ( response ) {
-                pool.regions[ regionIndex ].markup = response.replace(/inC2GeoTest\[]/g,"inC2GeoTest[4]");
+                pool.regions[ regionIndex ].markup = response.replace(/inC2GeoTest\[]/g,"inC2GeoTest[4]").replace("uipp.init", "//uipp.init");
                 selfSelect.drawPool( regionIndex );
             }
         } );
