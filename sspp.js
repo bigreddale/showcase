@@ -1,5 +1,6 @@
 define( [ "jquery", "stringUtil", "security", "mcomjs/components/media/CarouselController" ], function ( $, stringUtil, security, CarouselController ) {
-    var selfSelect = {};
+alert(1);
+  var selfSelect = {};
 
     selfSelect.pools = {
         "16904": {
