@@ -108,7 +108,7 @@ alert(1);
             } ),
             dataType: 'html',
             success: function ( response ) {
-                pool.regions[ regionIndex ].markup = response;
+                pool.regions[ regionIndex ].markup = response.replace(/inC2GeoTest[]/g,"inC2GeoTest[4]");
                 selfSelect.drawPool( regionIndex );
             }
         } );
