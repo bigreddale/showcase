@@ -1,4 +1,4 @@
-define( [ "jquery", "stringUtil", "security", "mcomjs/components/media/CarouselController" ], function ( $, stringUtil, security, CarouselController ) {
+define( [ "jquery", "mcomjs/components/media/CarouselController" ], function ( $, CarouselController ) {
 alert(1);
   var selfSelect = {};
 
@@ -30,64 +30,7 @@ alert(1);
                 "title": "U.S.",
                 "markup": ""
             } ]
-        },
-        "118": {
-            "domNode": ".carouselProductPool:first",
-            "rowId": "",
-            "regions": [ {
-                "title": "Los Angeles",
-                "mediaId": 3253010,
-                "markup": ""
-            }, {
-                "title": "New York",
-                "mediaId": 3253011,
-                "markup": ""
-            }, {
-                "title": "Miami",
-                "mediaId": 3253012,
-                "markup": ""
-            }, {
-                "title": "Dallas",
-                "mediaId": 3253013,
-                "markup": ""
-            }, {
-                "title": "Chicago",
-                "mediaId": 3253014,
-                "markup": ""
-            }, {
-                "title": "U.S.",
-                "markup": ""
-            } ]
-        },
-        "1": {
-            "domNode": ".carouselProductPool:first",
-            "rowId": "",
-            "regions": [ {
-                "title": "New York",
-                "mediaId": 3253015,
-                "markup": ""
-            }, {
-                "title": "Miami",
-                "mediaId": 3253016,
-                "markup": ""
-            }, {
-                "title": "Dallas",
-                "mediaId": 3253017,
-                "markup": ""
-            }, {
-                "title": "San Francisco",
-                "mediaId": 3253023,
-                "markup": ""
-            }, {
-                "title": "DC",
-                "mediaId": 3253024,
-                "markup": ""
-            }, {
-                "title": "U.S.",
-                "markup": ""
-            } ]
         }
-
 
     };
 
@@ -100,7 +43,7 @@ alert(1);
     };
 
 
-    selfSelect.setPoolId( security.preventXss( stringUtil.getURLParameter( "id" ) ) );
+    selfSelect.setPoolId( 16904 );
     selfSelect.setServiceURL( "/shop/catalog/product/productpool" );
     selfSelect.navHTML = "";
 
