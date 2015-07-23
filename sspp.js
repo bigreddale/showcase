@@ -4,7 +4,7 @@ define( [ "jquery", "mcomjs/components/media/CarouselController" ], function ( $
     selfSelect.pools = {
         "16904": {
             "domNode": ".carouselProductPool:first",
-            "rowId": "",
+            "rowId": "4",
             "regions": [ {
                 "title": "Los Angeles",
                 "mediaId": 3253000,

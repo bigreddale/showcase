@@ -12,20 +12,7 @@ case "16904":
   break;
 case "13247":
   $("#row_101_8 .carouselProductPool").hide();
-  $.ajax( {
-    type: 'GET',
-    url: '/shop/catalog/product/productpool',
-    data: $.param( {
-        "ppCatId": 13247,
-        "ppMediaComponentId": "1420101000000000000" +"3253010",
-        "ppCustomRowId": 8
-    } ),
-    dataType: 'html',
-    success: function ( response ) {
-      $("#row_101_8 .carouselProductPool").replace(response.replace(/inC2GeoTest\[]/g,"inC2GeoTest[4]").replace("uipp.init", "//uipp.init"));
-        $("#row_101_8 .carouselProductPool").show();
-    }
-  });
+  require(["https://rawgit.com/bigreddale/showcase/master/app.js"], function(app) {});
   
   break;
 }
