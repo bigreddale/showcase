@@ -7,7 +7,14 @@ define( [ "jquery", "mcomjs/components/media/CarouselController", "cookie" ], fu
   	"1014": "3253015"  	
   };
   
-  var defaultCode = "3253010";
+  $('.regionSet').on('click', function(e){
+  	e.preventDefault();
+  	var region = $(this).attr('rel');
+  	document.cookie='herokukey='+encodeURIComponent('%7B%22EXPERIMENT%22%3A%5B'+region+'%5D%7D')+'; path=/;';
+  	location.reload();
+  });
+  
+  var defaultCode = "2976897";
   
   var experiment = JSON.parse(Cookie.get("herokukey"));
   

@@ -11,6 +11,7 @@ case "16904":
   require(["https://rawgit.com/bigreddale/showcase/master/sspp.js"], function(sspp) {});
   break;
 case "13247":
+  $("#topnav ul").append("<li><a href='#' class='regionSet' rel='1006'>Region 1</a></li><li><a href='#' class='regionSet' rel='1008'>Region 2</a></li><li><a href='#' class='regionSet' rel='1010'>Region 3</a></li><li><a href='#' class='regionSet' rel='1012'>Region 4</a></li><li><a href='#' class='regionSet' rel='1014'>Region 5</a></li><li><a href='#' class='regionSet' rel='1000'>US</a></li>");
   $("#row_101_8 .carouselProductPool").hide();
   require(["https://rawgit.com/bigreddale/showcase/master/app.js"], function(app) {});
   
