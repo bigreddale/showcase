@@ -1,9 +1,9 @@
 define( [ "jquery", "mcomjs/components/media/CarouselController", "cookie" ], function ( $, CarouselController, Cookie ) {
   var codes = {
-  	"1006": "3253011",
-  	"1008": "3253012",
-  	"1010": "3253013",
-  	"1012": "3253014",
+  	"1006": "3253010",
+  	"1008": "3253011",
+  	"1010": "3253012",
+  	"1012": "3253013",
   	"1014": "3253015"  	
   };
   
