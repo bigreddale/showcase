@@ -10,7 +10,7 @@ define( [ "jquery", "mcomjs/components/media/CarouselController", "cookie" ], fu
   $('.regionSet').on('click', function(e){
   	e.preventDefault();
   	var region = $(this).attr('rel');
-  	document.cookie='herokukey='+encodeURIComponent('%7B%22EXPERIMENT%22%3A%5B'+region+'%5D%7D')+'; path=/;';
+  	document.cookie='herokukey=%7B%22EXPERIMENT%22%3A%5B'+region+'%5D%7D; path=/;';
   	location.reload();
   });
   
