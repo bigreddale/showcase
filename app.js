@@ -1,10 +1,10 @@
 define( [ "jquery", "mcomjs/components/media/CarouselController", "cookie" ], function ( $, CarouselController, Cookie ) {
   var codes = {
-  	"1006": "3253010",
-  	"1008": "3253011",
-  	"1010": "3253012",
-  	"1012": "3253013",
-  	"1014": "3253015"  	
+  	"1006": "3569938",
+  	"1008": "3569939",
+  	"1010": "3569940",
+  	"1012": "3569941",
+  	"1014": "3569942"  	
   };
   
   $('.regionSet').on('click', function(e){
@@ -14,7 +14,7 @@ define( [ "jquery", "mcomjs/components/media/CarouselController", "cookie" ], fu
   	location.reload();
   });
   
-  var defaultCode = "2976897";
+  var defaultCode = "3569178";
   
   var experiment = JSON.parse(Cookie.get("herokukey"));
   
